@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.header-img {
+.header__img {
   width: 100%;
 }
-.header .link-info {
+.header__link-info {
   font-family: fantasy, cursive;
 }
 
@@ -32,7 +32,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.add-task-wrapper {
+.section-add__task-wrapper {
   display: flex;
 }
 .list {
@@ -120,12 +120,12 @@ input#new-task {
 .list-item > .input-text {
   width: 226px;
 }
-.btn.delete img {
+.btn__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn.delete img:hover {
+.btn__img:hover {
   transform: rotateZ(0);
 }
 
