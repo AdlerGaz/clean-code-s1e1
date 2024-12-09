@@ -60,7 +60,7 @@ const createNewTaskElement = function(taskString){
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
     return listItem;
-}
+};
 
 
 
@@ -76,7 +76,7 @@ const addTask = function(){
 
     taskInput.value = "";
 
-}
+};
 
 //Edit an existing task.
 
@@ -117,7 +117,7 @@ const deleteTask = function(){
     //Remove the parent list item from the ul.
     ul.removeChild(listItem);
 
-}
+};
 
 
 //Mark task completed
@@ -129,7 +129,7 @@ const taskCompleted = function(){
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
-}
+};
 
 
 const taskIncomplete = function(){
@@ -140,13 +140,13 @@ const taskIncomplete = function(){
     const listItem = this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
-}
+};
 
 
 
 const ajaxRequest = function(){
     console.log("AJAX Request");
-}
+};
 
 //The glue to hold it all together.
 
@@ -171,7 +171,7 @@ const bindTaskEvents = function(taskListItem,checkBoxEventHandler){
     deleteButton.onclick = deleteTask;
     //Bind taskCompleted to checkBoxEventHandler.
     checkBox.onchange = checkBoxEventHandler;
-}
+};
 
 //cycle over incompleteTaskHolder ul list items
 //for each list item
